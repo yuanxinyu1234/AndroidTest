@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetActivity"
+    android:orientation="vertical">
+
+    <!--gravity文字对其方式 |指定多个值 在垂直、水平方向都居中-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="TextView" />
+
+    <!--textAllCaps="false" 禁用全部大写属性-->
+    <Button
+        android:id="@+id/btn_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_pd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn_pd"
+        android:textAllCaps="false"/>
+
+    <!--maxLines最大行数为2行-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type spmething here"
+        android:maxLines="2"/>
+
+    <!--进度条-->
+    <ProgressBar
+        android:id="@+id/pb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"/>
+
+</LinearLayout>

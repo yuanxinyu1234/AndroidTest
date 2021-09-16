@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_esc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="×"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_box1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_esc"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信号/QQ/邮箱登录"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_box2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_box1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:id="@+id/box21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_login_title_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号"
+                android:textSize="16dp"/>
+            <EditText
+                android:id="@+id/ev_login_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="请填写微信号/QQ/邮箱登录"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_underline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/box21"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_box22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/tv_login_title_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="16dp"/>
+            <EditText
+                android:id="@+id/ev_login_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:password="true"
+                android:background="@null"
+                android:hint="请填写密码"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_underline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_box22"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp" />
+        <TextView
+            android:id="@+id/tv_skip"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_underline2"
+            android:layout_marginTop="40dp"
+            android:text="用手机号登录"
+            android:textSize="15dp" />
+        <Button
+            android:id="@+id/btn_login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_skip"
+            android:layout_marginTop="40dp"
+            android:text="登录"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btn_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login_submit"
+            android:layout_marginTop="10dp"
+            android:text="注册"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tl_end"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/rl_box2"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="70dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找回密码"
+                android:layout_column="0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急冻结"
+                android:layout_column="2"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:layout_column="3"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信安全中心"
+                android:layout_column="4"
+                android:layout_marginLeft="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

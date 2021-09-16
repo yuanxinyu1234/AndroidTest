@@ -1,0 +1,12 @@
+rootProject.name = "AndroidTest"
+include ':ActivityTest'
+include ':UITest'
+include ':FragmentTest'
+include ':DataPersistenceTest'
+include ':LitePalTest'
+include ':ServiceTest'
+include ':servicetest'
+include ':ContentProviderTest'
+include ':MediaTest'
+include ':ServiceTestAgain'
+include ':BroadcastTest'

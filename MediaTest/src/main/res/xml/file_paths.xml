@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--<external-path name="InstructiveRide" path="Android/data/com.package.ride/files/Pictures"/>-->
+    <external-path
+        name="my_images" path="."/>
+</paths>

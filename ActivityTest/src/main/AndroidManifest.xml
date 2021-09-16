@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thundersoft.androidtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidTest">
+        <activity android:name=".IntentReturnActivity" />
+        <activity android:name=".IntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 指定数据的协议部分 -->
+                <!-- <data android:scheme="http"/> -->
+                <!-- 指定数据的主机名 -->
+                <!-- <data android:host=""/> -->
+                <!-- 指定数据的端口，一般紧随在主机名之后 -->
+                <!-- <data android:port=""/> -->
+                <!-- 指定主机名和端口之后的部分 -->
+                <!-- <data android:path=""/> -->
+                <!-- 指定可以处理的数据类型，允许使用通配符的方式进行指定 -->
+                <!-- <data android:mimeType=""/> -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
