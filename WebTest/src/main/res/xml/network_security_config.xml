@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<network-security-config>
+    <domain-config>
+        &lt;!&ndash;这里配置域名，用你的TSP网站域名&ndash;&gt;
+        <domain includeSubdomains="true">secure.example.com</domain>
+        <trust-anchors>
+            &lt;!&ndash;用户自装证书&ndash;&gt;
+            <certificates src="user"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>-->
+
+
+<network-security-config>
+
+<base-config cleartextTrafficPermitted="true"/>
+<!-- Trust user added CAs while debuggable only -->
+<debug-overrides>
+    <trust-anchors>
+        <!--信任用户安装的证书-->
+        <certificates src="user" />
+        <certificates src="system" overridePins="true" />
+    </trust-anchors>
+</debug-overrides>
+</network-security-config>
